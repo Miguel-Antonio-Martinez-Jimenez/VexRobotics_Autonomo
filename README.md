@@ -62,12 +62,12 @@
 8. `NombreMotor.spin()` (Giro Continuo)
 
     ```cpp bash
-    Brazo.spin(dirección, velocidad, unidades);
+    NombreMotor.spin(dirección, velocidad, unidades);
 >[!IMPORTANT]
 > Gira el motor indefinidamente en la dirección y velocidad especificadas hasta que se llame a `.stop().`
 - Ejemplo:
 
     ```cpp bash
-    Brazo.spin(forward, 60, percent);  // Gira al 60% hacia adelante
-    wait(3, sec);                      // Espera 3 segundos
-    Brazo.stop();                      // Detiene el motor
+    NombreMotor.spin(forward, 60, percent);  // Gira al 60% hacia adelante
+    wait(3, sec);                            // Espera 3 segundos
+    NombreMotor.stop();                      // Detiene el motor
